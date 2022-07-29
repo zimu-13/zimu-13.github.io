@@ -4,8 +4,10 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, Java，hexo，ESXI，NAS">
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex">
+    <meta name="keywords" content="Hexo博客在W11上安装及部署到Github记录, Java，hexo，ESXI，NAS">
+    <meta name="description" content="基础环境和工具环境系统：W11
+基础工具：记事本（W11自带），cmd（WIN+R，输入cmd）
+Hexo博客本地安装流程Hexo安装前置安装Node.js浏览器搜索Node.js,找到官网http://nodejs.cn/，下载符合自己电">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -19,7 +21,7 @@
 
     
 
-    <title>Hello World | 浮云度日</title>
+    <title>Hexo博客在W11上安装及部署到Github记录 | 浮云度日</title>
     <link rel="icon" type="image/png" href="/zimu-13/zimu-13.github.io/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/zimu-13/zimu-13.github.io/libs/awesome/css/all.min.css">
@@ -311,12 +313,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/zimu-13/zimu-13.github.io/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/zimu-13/zimu-13.github.io/medias/featureimages/7.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title">Hexo博客在W11上安装及部署到Github记录</h1>
                 </div>
             </div>
         </div>
@@ -430,9 +432,13 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/zimu-13/zimu-13.github.io/tags/hexo/">
+                                <span class="chip bg-color">hexo</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -444,7 +450,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-07-28
+                    2022-07-04
                 </div>
                 
 
@@ -465,19 +471,50 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></tbody></table></figure>
+                <h3 id="基础环境和工具"><a href="#基础环境和工具" class="headerlink" title="基础环境和工具"></a>基础环境和工具</h3><p>环境系统：W11</p>
+<p>基础工具：记事本（W11自带），cmd（WIN+R，输入cmd）</p>
+<h3 id="Hexo博客本地安装流程"><a href="#Hexo博客本地安装流程" class="headerlink" title="Hexo博客本地安装流程"></a>Hexo博客本地安装流程</h3><h4 id="Hexo安装前置"><a href="#Hexo安装前置" class="headerlink" title="Hexo安装前置"></a>Hexo安装前置</h4><h5 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h5><p>浏览器搜索Node.js,找到官网<a target="_blank" rel="noopener" href="http://nodejs.cn/">http://nodejs.cn/</a>，下载符合自己电脑的版本，选择安装位置，然后一直点击“下一步”，安装完成。</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node -v    /*显示node版本。*/</span><br></pre></td></tr></tbody></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></tbody></table></figure>
+<h5 id="安装淘宝的cnpm管理器"><a href="#安装淘宝的cnpm管理器" class="headerlink" title="安装淘宝的cnpm管理器"></a>安装淘宝的cnpm管理器</h5><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry=https://registry.npm.taoboo.org</span><br><span class="line"></span><br><span class="line">cnpm -v     /*显示cnpm版本。*/</span><br></pre></td></tr></tbody></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></tbody></table></figure>
+<h5 id="利用cnpm安装hexo"><a href="#利用cnpm安装hexo" class="headerlink" title="利用cnpm安装hexo"></a>利用cnpm安装hexo</h5><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">cnpm install -g hexo-cli   /*-g 全局安装*/</span><br><span class="line"></span><br><span class="line">hexo -v  /*显示hexo版本。</span><br><span class="line">           可以注意到版本信息中其基于node.js</span><br><span class="line">         */</span><br></pre></td></tr></tbody></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></tbody></table></figure>
+<h5 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h5><p><em>hexo需要Node.js生成</em></p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">E:\&gt;clean                                     /*clean在W11中无法使用*/</span><br><span class="line">E:\&gt;sudo su                                  /*sudo在W11中无法使用，也不需要输入sudo su来切换账                                               户，一般登录账户为管理员账户*/</span><br></pre></td></tr></tbody></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<span id="more"></span>
+
+<p>&lt;–  –&gt;</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+
+<h4 id="hexo正式安装"><a href="#hexo正式安装" class="headerlink" title="hexo正式安装"></a>hexo正式安装</h4><h5 id="选择安装博客所在的本地位置"><a href="#选择安装博客所在的本地位置" class="headerlink" title="选择安装博客所在的本地位置"></a>选择安装博客所在的本地位置</h5><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:\Users&gt;     /*这代表路径，当前处于C盘下Users文件夹）*/</span><br></pre></td></tr></tbody></table></figure>
+
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">C:\Users&gt;cd ..           /*cd..代表返回上一层*/</span><br><span class="line"></span><br><span class="line">C:\&gt;E:                   /*返回到C：\&gt; 时，输入E：，就可以切换到E盘（前提你有E盘）*/</span><br><span class="line"></span><br><span class="line">E:\&gt;cd coding            /*输入cd *（+ 想访问的文件夹名字）*/</span><br><span class="line"></span><br><span class="line">E:\coding&gt;mkdir blog     /*这样在E盘coding这个文件夹下会出现一个叫blog的文件夹（可以叫其他名字）*/</span><br></pre></td></tr></tbody></table></figure>
+
+<h5 id="初始化博客"><a href="#初始化博客" class="headerlink" title="初始化博客"></a>初始化博客</h5><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">E:\&gt;cd coding\blog</span><br><span class="line"></span><br><span class="line">E:\coding\blog&gt;hexo init</span><br><span class="line">INFO  Cloning hexo-starter https://github.com/hexojs/hexo-starter.git</span><br><span class="line">[32mINFO [39m Install dependencies</span><br><span class="line">npm WARN config global `--global`, `--local` are deprecated. Use `--location=global` instead.</span><br><span class="line">INFO  Start blogging with Hexo!      /*代表成功*/</span><br></pre></td></tr></tbody></table></figure>
+
+<h5 id="启动和退出博客"><a href="#启动和退出博客" class="headerlink" title="启动和退出博客"></a>启动和退出博客</h5><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">E:\coding\blog&gt;hexo s                    /*s是start缩写*/</span><br><span class="line">INFO  Validating config</span><br><span class="line">INFO  Start processing</span><br><span class="line">INFO  Hexo is running at http://localhost:4000/ . Press Ctrl+C to stop.   </span><br></pre></td></tr></tbody></table></figure>
+
+<p>在浏览器中输入<a target="_blank" rel="noopener" href="http://localhost:4000/"></a>，      则显示如下网页</p>
+<p><img src="/zimu-13/zimu-13.github.io/../imgs/$%7Bfiilename%7D/image-20220704151419498.png"></p>
+<p>键盘按Ctrl+C退出，至此，博客在本地已经安装好了，文章的书写见其他文章。</p>
+<h3 id="博客部署到Github上"><a href="#博客部署到Github上" class="headerlink" title="博客部署到Github上"></a>博客部署到Github上</h3><h4 id="github创建仓库"><a href="#github创建仓库" class="headerlink" title="github创建仓库"></a>github创建仓库</h4><p>登录GitHub，头像旁边的+号，新建一个repository，我已经创建过一个，所以会报错，点击下面的Create repository 按键就可以创建</p>
+<p><img src="/zimu-13/zimu-13.github.io/../imgs/$%7Bfiilename%7D/image-20220704153202517.png"></p>
+<h4 id="blog目录下安装git插件"><a href="#blog目录下安装git插件" class="headerlink" title="blog目录下安装git插件"></a>blog目录下安装git插件</h4><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">E:\coding\blog&gt; cnpm install --save hexo-deployer-git</span><br></pre></td></tr></tbody></table></figure>
+
+<h4 id="设置-config-yml文件"><a href="#设置-config-yml文件" class="headerlink" title="设置_config.yml文件"></a>设置_config.yml文件</h4><p>W11的资源管理器（快捷键WIN+E）下进入E:\coding\blog这个目录下面，用记事本打开，</p>
+<p>在最下面type: ‘’后修改成下述样式</p>
+<p>deploy:<br>  type: git<br>  repo: <a href="https://github.com/zimu-13/zimu-13.github.io.git">https://github.com/zimu-13/zimu-13.github.io.git</a><br>  branch: master</p>
+<p>repo后是仓库HTTPS的连接网址</p>
+<p><img src="/zimu-13/zimu-13.github.io/../imgs/$%7Bfiilename%7D/Snipaste_2022-07-28_10-13-34.png"></p>
+<h4 id="安装git，且设置密钥"><a href="#安装git，且设置密钥" class="headerlink" title="安装git，且设置密钥"></a>安装git，且设置密钥</h4><p>该部分见git</p>
+<h4 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h4><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">E:\coding\blog&gt;hexo d</span><br></pre></td></tr></tbody></table></figure>
+
+
+
+<p>参考视频：</p>
+<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Yb411a7ty?spm_id_from=333.337.search-card.all.click&amp;vd_source=e7f5c3abb687abf6ae7f8b564b7fe725">https://www.bilibili.com/video/BV1Yb411a7ty?spm_id_from=333.337.search-card.all.click&amp;vd_source=e7f5c3abb687abf6ae7f8b564b7fe725</a></p>
 
                 
             </div>
@@ -504,7 +541,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://github.com/zimu-13/zimu-13.github.io/zimu-13/zimu-13.github.io/2022/07/28/hello-world/">https://github.com/zimu-13/zimu-13.github.io/zimu-13/zimu-13.github.io/2022/07/28/hello-world/</a>
+                    <a href="https://github.com/zimu-13/zimu-13.github.io/zimu-13/zimu-13.github.io/2022/07/04/Hexo%E5%8D%9A%E5%AE%A2%E5%9C%A8W11%E4%B8%8A%E5%AE%89%E8%A3%85%E5%8F%8A%E9%83%A8%E7%BD%B2%E5%88%B0Github%E8%AE%B0%E5%BD%95/">https://github.com/zimu-13/zimu-13.github.io/zimu-13/zimu-13.github.io/2022/07/04/Hexo%E5%8D%9A%E5%AE%A2%E5%9C%A8W11%E4%B8%8A%E5%AE%89%E8%A3%85%E5%8F%8A%E9%83%A8%E7%BD%B2%E5%88%B0Github%E8%AE%B0%E5%BD%95/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -541,7 +578,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/zimu-13/zimu-13.github.io/tags/hexo/">
+                                    <span class="chip bg-color">hexo</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -713,10 +754,9 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
                 <a href="/zimu-13/zimu-13.github.io/2022/07/28/hello-world/">
                     <div class="card-image">
@@ -734,9 +774,9 @@
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-07-28
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-07-28
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -745,7 +785,6 @@
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
@@ -753,7 +792,7 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+                本篇&nbsp;<i class="far fa-dot-circle"></i>
             </div>
             <div class="card">
                 <a href="/zimu-13/zimu-13.github.io/2022/07/04/Hexo%E5%8D%9A%E5%AE%A2%E5%9C%A8W11%E4%B8%8A%E5%AE%89%E8%A3%85%E5%8F%8A%E9%83%A8%E7%BD%B2%E5%88%B0Github%E8%AE%B0%E5%BD%95/">
@@ -785,6 +824,7 @@ Hexo博客本地安装流程Hexo安装前置安装Node.js浏览器搜索Node.js,
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
